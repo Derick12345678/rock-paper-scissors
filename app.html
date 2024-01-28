@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Fair Rock Paper Scissors</title>
+    <link rel="stylesheet" href="app.css">
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils@0.1/camera_utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils@0.1/control_utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils@0.2/drawing_utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands@0.1/hands.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Fair Rock Paper Scissors</h1>
+    </header>
+
+    <div class="container">
+        <div class="box left">
+            <video class="Normal_cam"></video>
+        </div>
+
+        <div class="box right"> 
+            <div style="visibility: hidden;">
+                <input type="text" id="outputText" readonly>
+            </div>
+            <img id="updateImage" src="">
+        </div>
+    </div>
+
+    <div style="visibility: hidden;">
+        <canvas class="Cool_cam" width="12px" height="12px"></canvas>
+    </div>
+
+    <div style="visibility: hidden;" class="everything">
+        <script type="text/javascript" src="app.js"></script>
+    </div>
+</body>
+</html>
